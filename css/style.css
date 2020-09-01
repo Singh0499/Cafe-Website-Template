@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Piedra&family=Roboto+Mono&display=swap');
+
+/* Reset */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+html,body{
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.7em;
+}
+
+a{
+  color: #333;
+  text-decoration: none;
+}
+
+h1, h2, h3{
+  padding-top: 20px;
+}
+
+p{
+  margin:10px 0;
+}
+
+/* Utilities */
+.container{
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.primary-text{
+  color: #f7c08a;
+}
+
+.lead{
+  font-size: 20px;
+
+}
+
+.btn{
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  background: #333;
+  padding: 13px 20px;
+  border: 2px solid #f7c08a;
+  border-radius: 50px;
+  cursor:pointer;
+}
+
+.btn:hover{
+  color: #333;
+  background:#f7c08a;
+  border:2px solid #333;
+}
+
+.btn-light{
+  background: #f4f4f4;
+  color: #333;
+}
+
+.btn-dark{
+  background: #333;
+  color:#fff;
+}
+
+.bg-dark{
+  background: #333;
+  color:#fff;
+}
+
+.bg-light{
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-primary{
+  background: #f7c08a;
+  color: #333;
+}
+
+.clr{
+  clear: both;
+}
+
+.L-heading{
+  font-size: 40px;
+}
+
+/* Padding */
+.py-1{ padding: 10px 0;}
+.py-2{ padding: 20px 0;}
+.py-3{ padding: 30px 0;}
+
+/* Navbar */
+
+#navbar{
+  background:#333;
+  color:#fff;
+  overflow: auto;
+}
+
+#navbar a{
+  color: #fff;
+}
+
+#navbar h1{
+  float:left;
+  padding-top:20px;
+  font-size: 2rem;
+}
+
+#navbar ul{
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li{
+  float: left;
+}
+
+#navbar ul li a{
+  display:block;
+  padding:20px;
+  text-align: center;
+}
+#navbar ul li a:hover,
+#navbar ul li a.current{
+  background:#444;
+  color: #f7c08a;
+}
+
+/* Showcase */
+
+#showcase{
+  background: linear-gradient(#3333338c,#3333338c),url('../img/cyril-saulnier-mpSMThAU4OY-unsplash.jpg') no-repeat center center/cover;
+  height: 600px;
+  background-size: cover;
+}
+
+#showcase .showcase-content{
+  color: #fff;
+  text-align: center;
+  padding-top: 170px;
+}
+
+#showcase .showcase-content h1{
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+#showcase .showcase-content p{
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+/* Home info */
+
+#home-info{
+  height: 450px;
+}
+
+#home-info .info-img{
+  float: left;
+  width: 50%;
+  height: auto;
+  background: url('../img/ali-yahya-oAjlm54M-h4-unsplash\ \(1\).jpg') no-repeat;
+  background-size:cover;
+  min-height: 100%;
+}
+
+#home-info .info-content{
+  float: right;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  padding:30px 30px;
+  overflow: hidden;
+}
+
+#home-info .info-content p{
+  padding-bottom: 25px;
+}
+
+ #home-info .info-content h2{
+   padding-bottom:20px;
+  font-size: 20px;
+}  
+
+/* Features */
+.box{
+  float: left;
+  width: 33.33%;
+  padding:50px;
+  text-align: center;
+}
+
+.box i{
+  margin-bottom: 10px;
+}
+
+/* About-info */
+
+#about-info .info-right{
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+#about-info .info-right img{
+  display: block;
+  margin: auto;
+  width: 70%;
+  border-radius: 50%;
+
+}
+
+#about-info .info-left{
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+
+#about-info .info-left h1{
+  padding-bottom: 10px;
+}
+/* Testimnials */
+
+#testimonials{
+  height: 100%;
+  background: url('../img/khara-woods-6hUR284gLJY-unsplash.jpg') no-repeat center center/cover;
+  padding-top:100px;
+}
+
+#testimonials .testimonials{
+  padding:20px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+}
+
+#testimonials .testimonials img{
+  width: 80px;
+  float: left;
+  padding-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+#testimonials h2{
+  color: #f7c08a;
+  text-align: center;
+  padding-bottom: 40px;
+  line-height: 1.2em;
+}
+
+/* contact-form */
+#contact-form .form-group{
+  margin-bottom:20px;
+}
+
+#Contact-form label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+#Contact-form input, 
+#Contact-form textarea{
+  padding :10px;
+  width:100%;
+  border:2px #ddd solid;
+  margin-bottom: 10px;
+}
+
+#Contact-form textarea{
+  height:  200px ;
+}
+
+#Contact-form input:focus, 
+#Contact-form textarea:focus{
+  outline: none;
+  border-color:#f7c08a ;
+}
+
+#Contact-form h1{
+  padding-top: 3px;
+  margin-top: 0px;
+  padding-bottom: 20px;
+}
+#contact-info box{
+  overflow: hidden;
+}
+
+.main-footer{
+  background: #444;
+  color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+} 
